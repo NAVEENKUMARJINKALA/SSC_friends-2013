@@ -1,1 +1,1 @@
-Live: https://durgaprasadgalla.github.io/friends_Album/
+https://naveenkumarjinkala.github.io/SSC_friends-2013/
