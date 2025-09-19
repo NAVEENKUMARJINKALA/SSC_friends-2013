@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend's Album</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <!-- <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIS85040iLqAjmJts22r0vXg9RgtfCrxnWZJOMJFt5IqRPukEPtvjxvr699r2VcqaSWpA&usqp=CAU" alt="Logo"> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" id="nav-item1" href="#home">Home</a>
+          <a class="nav-link" id="nav-item2" href="#boys">Boys</a>
+          <a class="nav-link" id="nav-item3" href="#girls">Girls</a>
+          <a class="nav-link" id="nav-item3" href="#Teachers">Teachers</a>
+          <a class="nav-link" id="nav-item3" href="#upload">Upload</a>
+          <!-- <a class="nav-link" id="nav-item4" href="index.html">Logout</a> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-container" id="home">
+      <div class="data">
+        <h1 class="heading">Welcome To my Friends Album</h1>
+        <h5 class="information">
+          "Explore the best moments with my friends!"
+        </h5>
+      </div>
+      <div class="heart"></div>
+      <img class="container-img" loading="lazy" src="Friends.jpg" />
+      <div class="btns">
+      <button  class="songbtn" onclick="playaudio()">Feel Music</button>
+      <a  href="#boys"> <button  class="songbtn" > Friends </button> </a> 
+    </div>
+    </div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+
+    <audio id="songbtn" autoplay loop controls style="display: none">
+      <source src="O My Friend.mp3" type="audio/mp3" />
+    </audio>
+    <!-- Boys -->
+    <div class="boys" id="boys">
+      <h1 class="boys-heading">Boys <span>(Rowdys)</span></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="J.naveen.jpg" />
+              <div class="member-details">
+                <h5>J.Naveen Kumar</h5>
+                <h5>Roll no : 14</h5>
+                <!-- <button class="cart-btn">view</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="G.naveen.jpg" />
+              <div class="member-details">
+                <h5>G.Naveen</h5>
+                <h5>Roll no : 03</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="P.koti.jpg" />
+              <div class="member-details">
+                <h5 style="font-size: 18px;">P.Kotesh</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="eswer.jpg" />
+              <div class="member-details">
+                <h5>P.Anjaneyulu</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="N.anji.png" />
+              <div class="member-details">
+                <h5>N.Anjaneyulu</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="V.srikanth.jpg" />
+              <div class="member-details">
+                <h5>V.Srikanth</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="K.rajini.jpg" />
+              <div class="member-details">
+                <h5>K.Rajinikanth</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="sairam.jpg" />
+              <div class="member-details">
+                <h5>M.Naveen</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="SaiKiran.png" />
+              <div class="member-details">
+                <h5>K.Ramesh</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="surya.jpg" />
+              <div class="member-details">
+                <h5>N.Rambabu</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="subhasaheb.jpg" />
+              <div class="member-details">
+                <h5>Y.Venkatreddy</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="siva.jpg" />
+              <div class="member-details">
+                <h5>D.Manikantam</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="venkat.jpg" />
+              <div class="member-details">
+                <h5>M.Jagapathi babu</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="venkat.jpg" />
+              <div class="member-details">
+                <h5>K.Venkatesh</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Girls -->
+    <div class="girls" id="girls">
+      <h1 class="boys-heading">Girls <span>(Queens)</span></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>J.Anusha</h5>
+                <h5>Roll no : 03</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="hema k.jpg" />
+              <div class="member-details">
+                <h5>V.Akhila</h5>
+                <h5>Roll no : 01</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="Mahi.jpg" />
+              <div class="member-details">
+                <h5>Anitha</h5>
+                <h5>Roll no : 2</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="Poojitha.jpg" />
+              <div class="member-details">
+                <h5>D.Deeshmitha</h5>
+                <h5>Roll no : 04</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>K.Divya</h5>
+                <h5>Roll no : 05</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5 style="font-size: 18px;">P.Komali</h5>
+                <h5>Roll no : 06</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>B.Renuka</h5>
+                <h5>Roll no : 07</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>N.Mangamma</h5>
+                <h5>Roll no : 08</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="Sravanthi.jpg" />
+              <div class="member-details">
+                <h5>B.Sucharitha</h5>
+                <h5>Roll no : 09</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>N.Ramadevi</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>Y.Sushmitha</h5>
+                <h5>Roll no : 11</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5 style="font-size: 18px;">G.Jyothi</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>B.Pavani</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>S.Swapna</h5>
+                <h5>Roll no : </h5>
+              </div>
+            </div>
+          </div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+
+        </div>
+      </div>
+    </div>
+     <!--Faculty -->
+    <div class="girls" id="Teachers">
+      <h1 class="boys-heading">Teacher's <span></span></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>Md.Moinuddin</h5>
+                <h5>Subject : Hindi</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="hema k.jpg" />
+              <div class="member-details">
+                <h5>Venkatanarsaiah sir</h5>
+                <h5>Subject : Hindi</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="Mahi.jpg" />
+              <div class="member-details">
+                <h5>Karuna teacher</h5>
+                <h5>Subject: English </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="Poojitha.jpg" />
+              <div class="member-details">
+                <h5>Narsimha sir</h5>
+                <h5>Subject: Maths</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>N.Jayaramulu sir</h5>
+                <h5>Head-Master</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5 style="font-size: 18px;">Venkayya sir</h5>
+                <h5>Subject: Biology</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>Vinoda Madam</h5>
+                <h5>Subject: Physics </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="card-conatiner">
+              <img class="card-img" src="add-friend.png" />
+              <div class="member-details">
+                <h5>Shaheed sir</h5>
+                <h5>PET sir</h5>
+              </div>
+            </div>
+          </div>
+    <!-- upload images -->
+    <div class="upload-container" id="upload">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="marquee">
+              <marquee behavior="scroll" direction="left" style="font-size: 18px; color: rgb(9, 233, 207);">Your Upload Pictures Visible on Your Device Only....</marquee>
+            </div>
+            <div class="upload">
+              <h3 style="color: rgb(9, 233, 207);font-size:23px;">Upload Memories</h3>
+              <div class="upload-section">
+                <input
+                  class="inputfile"
+                  type="file"
+                  id="imageInput"
+                  accept="image/*"
+                  multiple
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="uploaded">
+              <h3 style="color: rgb(9, 233, 207); font-size:22px">Your Uploaded Memories</h3>
+              <div style="background-color: black;" id="gallery"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="memories">
+        <div class="card-conatiners1">
+          <h4 style="color:rgb(9, 233, 207);">#SSC 2013 Batch</h4>
+          <img class="card-img" src="1.jpg" />
+          <img class="card-img" src="2.jpg" />
+          <img class="card-img" src="3.jpg" />
+          <img class="card-img" src="4.jpg" />
+        </div>
+        <div class="card-conatiners1">
+          <img class="card-img" src="Girls.jpg" />
+        </div>
+      </div>
+    </div> 
+    <center>
+      <footer style="font-family:'Courier New', Courier, monospace;font-weight:bold;">&copy;2025 Friends_Album (Naveen_Jinkala&hearts;)</footer>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
