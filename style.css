@@ -221,12 +221,14 @@ h1 {
 }
 .upload-section {
     margin: 20px 0;
-    color: rgb(9, 233, 207); 
+    color: rgb(9, 233, 207);
+    cursor: pointer;
 }
 .upload-section input[type="file"] {
     padding: 10px;
     font-size: 16px;
     color: rgb(9, 233, 207);
+    cursor: pointer;
     
 }
 #gallery {
