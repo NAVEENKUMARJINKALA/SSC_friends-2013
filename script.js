@@ -68,13 +68,31 @@ const imageInput = document.getElementById('imageInput');
         window.onload = displaySavedImages;
 
 
-var isplaying = false;
-function playaudio(){
-    var audio = document.getElementById("songbtn");
-    if (isplaying){
-        audio.pause();
-    }else{
-        audio.play()
-    }
-    isplaying =! isplaying;
-}
+// var isplaying = false;
+// function playaudio(){
+//     var audio = document.getElementById("songbtn");
+//     if (isplaying){
+//         audio.pause();
+//     }else{
+//         audio.play()
+//     }
+//     isplaying =! isplaying;
+// }
+
+  var audio = document.getElementById("songbtn");
+
+  // Unmute automatically after 2 seconds (optional)
+  window.onload = function () {
+      setTimeout(() => {
+          audio.muted = false;
+          audio.play().catch(err => {
+              console.log("Autoplay blocked until user interacts:", err);
+          });
+      }, 2000);
+  };
+
+  // Stop audio completely when leaving/closing page
+  window.onbeforeunload = function () {
+      audio.pause();
+      audio.currentTime = 0;
+  };
